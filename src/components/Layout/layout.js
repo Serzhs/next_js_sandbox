@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
     return (
         <div className={styles.container}>
             <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/public/favicon.ico" />
                 <meta
                     name="description"
                     content="Learn how to build a personal website using Next.js"
@@ -26,6 +26,7 @@ export default function Layout({ children, home }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className={styles.header}>
+                <Link href="/characters">Characters</Link>
                 {home ? (
                     <>
                         <Image
